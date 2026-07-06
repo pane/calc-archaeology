@@ -1,5 +1,7 @@
 # Research Methodology
 
+This document implements `docs/fundamental-principles.md`.
+
 ## Purpose
 
 This repository documents research related to classic electronic calculators,
@@ -7,6 +9,7 @@ including firmware, ROM analysis, hardware behavior, emulator development,
 execution traces, and algorithm reconstruction.
 
 The repository combines:
+
 - historical preservation
 - reverse engineering
 - experimental observation
@@ -15,15 +18,14 @@ The repository combines:
 
 The primary goal is to preserve evidence and document reasoning transparently.
 
----
+## Core Principles
 
-# Core Principles
-
-## 1. Evidence First
+### 1. Evidence First
 
 Primary artifacts always take precedence over interpretation.
 
 Examples:
+
 - ROM dumps
 - oscilloscope captures
 - emulator traces
@@ -31,72 +33,71 @@ Examples:
 - official documentation
 - verified disassemblies
 
----
-
-## 2. Separation of Evidence and Interpretation
+### 2. Separation of Evidence and Interpretation
 
 Observed facts and inferred conclusions should be documented separately.
-
 Interpretations may evolve as new evidence becomes available.
 
----
+### 3. Preservation of Uncertainty
 
-## 3. Preservation of Uncertainty
+Uncertainty is documented explicitly. Research findings are assigned confidence
+levels to distinguish directly observed behavior from inferred or speculative
+claims.
 
-Uncertainty is documented explicitly.
+## Evidence Hierarchy
 
-Research findings are assigned confidence levels to distinguish:
-- directly observed behavior
-- reproduced results
-- inferred conclusions
-- speculative hypotheses
-- AI-assisted interpretations
+Evidence is ranked conservatively. A lower-level source may still be useful,
+but it must not be presented as stronger than it is.
 
----
+- Level A: ROM bytes, raw dumps, or other direct digital artifacts
+- Level B: reproducible emulator traces
+- Level C: hardware measurements or physical observations
+- Level D: manufacturer documentation
+- Level E: patents
+- Level F: published research or contemporary third-party material
+- Level G: reasoned inference from documented evidence
+- Level H: hypothesis or AI-assisted interpretation
 
-# Confidence Levels
+## Confidence Levels
 
-## PRIMARY
-Direct artifact or unmodified source material.
+- C5: Confirmed by direct primary evidence or reproducible experiment
+- C4: Strong support from multiple independent sources
+- C3: Reasonable inference from available evidence
+- C2: Weak or incomplete inference
+- C1: Speculative working hypothesis
 
-## OBSERVED
-Directly measured or observed but not independently replicated.
+When uncertain, use the lower confidence level.
 
-## REPRODUCED
-Observed independently by multiple experiments, devices, or researchers.
+## Claim Labels
 
-## VERIFIED
-Strongly supported by multiple independent forms of evidence.
+Use explicit labels where ambiguity is possible:
 
-## CONSENSUS
-Widely accepted by multiple researchers or historical sources.
+- OBSERVATION: directly observed source or behavior
+- INFERENCE: reasoned interpretation from evidence
+- HYPOTHESIS: plausible but unconfirmed explanation
+- ASSUMPTION: temporary working premise
+- UNKNOWN: unresolved behavior or missing information
+- CONFLICT: evidence sources disagree
 
-## HYPOTHESIS
-Plausible interpretation not yet experimentally confirmed.
-
-## AI-INFERRED
-Generated primarily through AI-assisted reasoning.
-
----
-
-# AI-Assisted Analysis Policy
+## AI-Assisted Analysis Policy
 
 AI-generated material may contain:
+
 - incorrect assumptions
 - fabricated relationships
 - incomplete reasoning
 - invalid conclusions
 
-Unless explicitly marked VERIFIED or REPRODUCED,
-AI-assisted analysis should be treated as provisional.
+Unless independently supported by cataloged evidence, AI-assisted analysis
+should be treated as provisional. AI-generated claims should normally start as
+C1 or C2.
 
 Primary evidence always takes precedence over AI interpretation.
 
----
-
-# Source Attribution
+## Source Attribution
 
 External materials should preserve:
+
 - original author
 - original URL
 - retrieval date
@@ -104,11 +105,13 @@ External materials should preserve:
 
 Referenced materials remain property of their respective authors.
 
----
+Do not invent or reserve evidence IDs before the corresponding evidence record
+exists.
 
-# Experimental Observations
+## Experimental Observations
 
 Hardware observations should document:
+
 - calculator model
 - hardware revision if known
 - measurement method
@@ -117,14 +120,22 @@ Hardware observations should document:
 
 Single-device observations are acceptable when labeled clearly.
 
----
+## Experimental Workflow
 
-# Repository Philosophy
+1. Record the raw observation or source.
+2. Assign or link a real evidence ID.
+3. Classify the evidence level.
+4. Separate observation from interpretation.
+5. Assign conservative confidence.
+6. Document reproduction status.
+7. Link related architecture, ROM, or trace notes only after records exist.
+
+## Repository Philosophy
 
 This repository functions both as:
+
 - a preservation archive
 - an active research workspace
 
-Not all content represents final conclusions.
-
-Transparency is preferred over false certainty.
+Not all content represents final conclusions. Transparency is preferred over
+false certainty.

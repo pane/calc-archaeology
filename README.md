@@ -26,6 +26,16 @@ The project combines:
 The repository is intended to support both human researchers and future
 AI-assisted analysis systems.
 
+## Core Rule
+
+Every technical statement in this repository must be traceable to either:
+
+- primary evidence, or
+- an explicitly labeled hypothesis.
+
+Placeholder citations are not allowed. If evidence has not yet been cataloged,
+the statement must remain tentative or be omitted.
+
 ## Current Areas of Interest
 
 - Texas Instruments calculator families
@@ -51,6 +61,10 @@ AI-assisted analysis systems.
 | `references/` | External references and source attribution |
 | `metadata/` | Structured machine-readable metadata |
 | `artifacts/` | Physical hardware observations and revision tracking |
+| `evidence/` | Evidence register and evidence record templates |
+| `experiments/` | Experiment records and reproducibility notes |
+| `intake/` | Unsorted source intake workflow |
+| `rom/` | ROM archaeology workspace |
 
 ## Research Philosophy
 
@@ -65,7 +79,9 @@ Primary artifacts and experimentally observed behavior always take
 precedence over interpretation.
 
 See:
+- `docs/fundamental-principles.md`
 - `docs/research-methodology.md`
+- `docs/rom-annotation-conventions.md`
 
 ## Status
 
