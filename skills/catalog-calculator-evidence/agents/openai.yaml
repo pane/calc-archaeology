@@ -1,0 +1,4 @@
+interface:
+  display_name: "Catalog Calculator Evidence"
+  short_description: "Catalog calculator sources with traceable evidence"
+  default_prompt: "Catalog this calculator source as evidence with provenance, rights status, claim boundaries, and conservative confidence."

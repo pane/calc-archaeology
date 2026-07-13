@@ -98,3 +98,21 @@ Research conclusions may change. Changes must preserve traceability:
 If a reader cannot trace a technical claim back to evidence, experiment, or a
 labeled hypothesis, the claim should be removed, rewritten, or marked as
 unsupported.
+
+## 11. Period-Correct Architecture
+
+Vintage calculator systems must be interpreted from their documented physical
+organization, timing, instruction sequencing, and historical terminology.
+Modern concepts such as flat byte-addressable memory, conventional stacks,
+interrupts, pipelines, caches, or IEEE floating point must not be assumed.
+Modern terminology may be used only as an explicitly limited analogy or when
+evidence establishes a real equivalent.
+
+## 12. Sensitive ROM Handling
+
+ROM images and reconstructive ROM-derived artifacts are sensitive internal
+documents by default. Store raw ROM material only in the private vault, never
+in Git, Honcho, public issues, or external services. Repository records may
+contain non-reconstructive metadata and analysis. Publication or external
+transfer of reconstructive ROM content requires documented rights review and
+Pane's explicit approval.

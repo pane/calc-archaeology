@@ -3,3 +3,11 @@ Thumbs.db
 *.tmp
 *.bak
 *.zip
+
+# Sensitive ROM material belongs in calc-archaeology-vault/private-rom/.
+*.rom
+*.ROM
+*.rom.bin
+*.dump.bin
+private-rom/
+sensitive-rom/
